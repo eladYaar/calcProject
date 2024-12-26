@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+}
+body {
+    background-color: antiquewhite;
+}
+.container {
+    /* border: 1px solid; */
+    /* height: 600px; */
+    width: 400px;
+    aspect-ratio: 400/306;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgb(150, 149, 149),grey) ;
+}
+
+.col {
+    border-bottom: 1px solid darkgray;
+}
+.row {
+    margin: 5px;
+}
+
+#ioDiv {
+    margin: 10px;
+    min-height: 25px;
+    border: 0;
+    word-wrap: break-word;
+    background: radial-gradient(circle at 80% 70%,cadetblue,teal);
+    border-radius: 5px;
+    color: lightgrey ;
+    font-family: "sevenSegment3";
+}
+.btn:hover {
+    background-color: darkgrey ;
+}
+.btn {
+    margin: 5px;
+    border: 0;
+    background-color: lightgrey;
+} 
+
+#calcContainer {
+
+}
+
+@font-face {
+    font-family: "sevenSegment";
+    src: url(assets/fonts/electronic-clock-display.otf);
+}
+@font-face {
+    font-family: "sevenSegment2";
+    src: url(assets/fonts/renault-7-segment.ttf);
+}
+@font-face {
+    font-family: "sevenSegment3";
+    src: url(assets/fonts/7segment.ttf);
+}
