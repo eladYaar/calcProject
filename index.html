@@ -39,8 +39,38 @@
                     </div>
                     <div class="col btn"
                         onclick="pushNumBtn(this.innerHTML.trim());">
-                       ans 
+                        ans
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col btn"
+                        onclick="pushOperatorBtn(this.innerHTML.trim(),true);">
+                        sin
+                    </div>
+                    <div class="col btn"
+                        onclick="pushOperatorBtn(this.innerHTML.trim(),true);">
+                        cos
+                    </div>
+
+                    <div class="col btn"
+                        onclick="pushOperatorBtn(this.innerHTML.trim(),true);">
+                        tan
+                    </div>
+                    <div class="col btn"
+                        onclick="pushNumBtn(this.innerHTML.trim());">
+                        π
+                    </div>
+
+                    <div class="col btn"
+                        onclick="pushOperatorBtn(this.innerHTML.trim());">
+                        ^
+                    </div>
+
+                    <div class="col btn"
+                        onclick="pushOperatorBtn(this.innerHTML.trim(),true);">
+                        √
+                    </div>
+
                 </div>
                 <div class="row">
                     <div class="col btn"
@@ -105,7 +135,8 @@
                         onclick="pushNumBtn(this.innerHTML.trim());">
                         .
                     </div>
-                    <div class="col btn" onclick="pushEqualsBtn();">
+                    <div class="col btn" id="equalsBtn"
+                        onclick="pushEqualsBtn();">
                         =
                     </div>
                     <div class="col btn"
@@ -113,8 +144,7 @@
                         +
                     </div>
                 </div>
-                <div class="row">
-
-                </div>
+                <div class="row"></div>
+                <div class="row"></div>
             </body>
         </html>

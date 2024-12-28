@@ -5,6 +5,21 @@ let equalPressed = true;
 let numPressed = false;
 let ans;
 
+let π = Math.PI;
+
+function sqrt(val) {
+    return Math.sqrt(val);
+}
+function sin(val) {
+    return Math.sin(val);
+}
+function cos(val) {
+    return Math.cos(val);
+}
+function tan(val) {
+    return Math.tan(val);
+}
+
 function pushNumBtn(btnValue) {
 
     if (equalPressed) {
@@ -14,19 +29,28 @@ function pushNumBtn(btnValue) {
     ioDiv.innerHTML += btnValue;
     numPressed = true;
 }
-function pushOperatorBtn(btnValue) {
+function pushOperatorBtn(btnValue, addBracket = false) {
     if (equalPressed) {
         ioDiv.innerHTML = "";
         equalPressed = false;
     }
-    ioDiv.innerHTML += " " + btnValue + " ";
+    if (addBracket) {
+        ioDiv.innerHTML += " " + btnValue + "( ";
+    } else {
+        ioDiv.innerHTML += " " + btnValue + " "
+    }
 }
 function pushEqualsBtn() {
     try {
         if (ioDiv.innerHTML === "SyntaxError" || ioDiv.innerHTML == "") {
             return;
         } else {
-            ans =  eval(ioDiv.innerHTML);
+            let calculateString = ioDiv.innerHTML.replace(/\^/g,"**").replace(/√/g,"sqrt"); 
+            
+            // console.log("ioDiv",ioDiv.innerHTML); 
+            // console.log(calculateString);
+
+            ans = eval(calculateString);
             ioDiv.innerHTML = ans;
         }
     } catch (error) {
