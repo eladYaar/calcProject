@@ -25,14 +25,15 @@ body {
 }
 
 #ioDiv {
+    font-size: x-large;
     margin: 10px;
     min-height: 25px;
     border: 0;
     word-wrap: break-word;
-    background: radial-gradient(circle at 80% 70%, cadetblue, teal);
+    background: radial-gradient(circle at 80% 70%, #5f9ea0, teal);
     border-radius: 5px;
     color: lightgrey;
-    font-family: "sevenSegment";
+    font-family: "sevenSegmentWAlphabet";
 }
 
 .btn:hover {
@@ -54,6 +55,11 @@ body {
 }
 
 @font-face {
-    font-family: "sevenSegment";
+    font-family: "7segment";
     src: url(assets/fonts/7segment.ttf);
+}
+
+@font-face {
+    font-family: "sevenSegmentWAlphabet";
+    src: url(assets/fonts/Seven_Segment.ttf);
 }
