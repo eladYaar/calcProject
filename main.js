@@ -45,7 +45,7 @@ function pushEqualsBtn() {
         if (ioDiv.innerHTML === "SyntaxError" || ioDiv.innerHTML == "") {
             return;
         } else {
-            let calculateString = ioDiv.innerHTML.replace(/\^/g,"**").replace(/√/g,"sqrt"); 
+            const calculateString = ioDiv.innerHTML.replace(/\^/g,"**").replace(/√/g,"sqrt").replace(/\)\s+\d|\d\s+\(/g, (match) => match.replace(/\s+/g, '*')); 
             
             // console.log("ioDiv",ioDiv.innerHTML); 
             // console.log(calculateString);

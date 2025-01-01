@@ -11,7 +11,7 @@ body {
     /* border: 1px solid; */
     /* height: 600px; */
     width: 400px;
-    aspect-ratio: 400/306;
+    aspect-ratio: 400/306; /* שלום מה קורה*/
     border-radius: 10px;
     background: linear-gradient(to bottom right, rgb(150, 149, 149), grey);
 }
